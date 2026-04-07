@@ -1,0 +1,63 @@
+{
+    "poblacion": {
+      "tamaño": 100,
+      "genes_fijos": 20,
+      "comentario": "Cada individuo tiene exactamente 20 productos"
+    },
+    "generaciones": {
+      "max_generaciones": 500,
+      "criterio_parada": "fitness_estable",
+      "generaciones_sin_mejora_max": 50,
+      "comentario": "Parar si no hay mejora en 50 generaciones consecutivas"
+    },
+    "operadores": {
+      "cruza": {
+        "tipo": "dos_puntos",
+        "probabilidad": 0.8,
+        "comentario": "80% de probabilidad de cruza, 20% copias directas"
+      },
+      "mutacion": {
+        "probabilidad_global": 0.15,
+        "probabilidad_por_gen": 0.1,
+        "tipos": [
+          {"tipo": "cambio_producto", "probabilidad": 0.30},
+          {"tipo": "cambio_cantidad", "probabilidad": 0.30},
+          {"tipo": "cambio_marca", "probabilidad": 0.25},
+          {"tipo": "cambio_supermercado", "probabilidad": 0.15}
+        ],
+        "comentario": "15% de individuos mutan, cada gen tiene 10% de mutar"
+      },
+      "seleccion": {
+        "tipo": "torneo",
+        "tamaño_torneo": 5,
+        "comentario": "Selección por torneo de 5 individuos"
+      },
+      "elitismo": {
+        "proporcion": 0.10,
+        "comentario": "Preservar 10% mejores (10 individuos)"
+      }
+    },
+    "fitness": {
+      "pesos": {
+        "costo": 0.25,
+        "nutricion": 0.20,
+        "desperdicio": 0.20,
+        "cobertura": 0.20,
+        "satisfaccion": 0.15
+      },
+      "penalizaciones": {
+        "exceso_presupuesto": 1000,
+        "alergeno_presente": 5000,
+        "deficiencia_nutricional_critica": 2000,
+        "producto_esencial_faltante": 1500,
+        "comentario": "Penalizaciones en unidades de fitness (muy severas)"
+      },
+      "comentario": "Suma de pesos = 1.0, fitness final en rango [0, 1]"
+    },
+    "restricciones": {
+      "presupuesto_buffer": 1.05,
+      "umbral_nutricion_minimo": 0.80,
+      "max_productos_perecederos": 12,
+      "comentario": "presupuesto_buffer=1.05 permite 5% de exceso temporal durante evolución"
+    }
+  }
