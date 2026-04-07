@@ -1,0 +1,11 @@
+edad_grupo,genero,calorias_dia,proteinas_g_dia,carbohidratos_g_dia,grasas_g_dia,fibra_g_dia,descripcion
+adulto,masculino,2500,75,312,83,30,Hombre adulto (19-65 años) actividad moderada
+adulto,femenino,2000,60,250,67,25,Mujer adulta (19-65 años) actividad moderada
+adulto,embarazada,2200,71,275,73,28,Mujer embarazada (segundo/tercer trimestre)
+niño_13_18,masculino,2800,85,350,93,31,Adolescente masculino (13-18 años)
+niño_13_18,femenino,2200,65,275,73,26,Adolescente femenino (13-18 años)
+niño_8_12,ambos,1800,50,225,60,20,Niño/a (8-12 años)
+niño_4_7,ambos,1400,40,175,47,15,Niño/a (4-7 años)
+niño_1_3,ambos,1000,25,125,33,10,Niño/a (1-3 años)
+adulto_mayor,masculino,2000,65,250,67,25,Hombre adulto mayor (>65 años)
+adulto_mayor,femenino,1600,50,200,53,21,Mujer adulta mayor (>65 años)
