@@ -5,7 +5,7 @@ Generador de población inicial para el Algoritmo Genético.
 import numpy as np
 import pandas as pd
 from typing import Dict, List
-from .generador_individuo import generar_individuo_aleatorio
+from .individuo import generar_individuo_aleatorio
 
 
 def generar_poblacion_inicial(
