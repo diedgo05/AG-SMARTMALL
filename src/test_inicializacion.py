@@ -5,12 +5,12 @@ Script de prueba para validar el módulo de inicialización.
 import sys
 sys.path.append('src')
 
-from utils.cargador_datos import (
+from utils import (
     cargar_catalogo,
     cargar_configuracion,
     cargar_requerimientos_nutricionales
 )
-from inicializacion.poblacion import generar_poblacion_inicial
+from inicializacion import generar_poblacion_inicial
 
 
 def main():

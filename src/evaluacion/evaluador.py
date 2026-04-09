@@ -11,7 +11,7 @@ from typing import Dict, List
 import sys
 sys.path.append('..')
 
-from fitness.init import calcular_fitness_total
+from fitness import calcular_fitness_total
 
 
 def evaluar_poblacion(

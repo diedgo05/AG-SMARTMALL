@@ -9,11 +9,12 @@ Responsabilidades:
 """
 
 from .evaluador import evaluar_poblacion, evaluar_individuo
-from .validador import validar_restricciones_duras, es_individuo_valido
+from .validador import validar_restricciones_duras, es_individuo_valido, contar_violaciones_poblacion
 
 __all__ = [
     'evaluar_poblacion',
     'evaluar_individuo',
     'validar_restricciones_duras',
-    'es_individuo_valido'
+    'es_individuo_valido',
+    'contar_violaciones_poblacion'
 ]

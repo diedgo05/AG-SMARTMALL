@@ -6,13 +6,13 @@ import sys
 sys.path.append('src')
 
 import numpy as np
-from utils.cargador_datos import (
+from utils import (
     cargar_catalogo,
     cargar_configuracion,
     cargar_requerimientos_nutricionales
 )
-from inicializacion.individuo import generar_individuo_aleatorio
-from fitness.fitness_total import calcular_fitness_total
+from inicializacion import generar_individuo_aleatorio
+from fitness import calcular_fitness_total
 
 
 def main():

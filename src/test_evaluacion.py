@@ -11,9 +11,9 @@ from utils.cargador_datos import (
     cargar_configuracion,
     cargar_requerimientos_nutricionales
 )
-from inicializacion.poblacion import generar_poblacion_inicial
-from evaluacion.evaluador import evaluar_poblacion
-from evaluacion.validador import (
+from inicializacion import generar_poblacion_inicial
+from evaluacion import (
+    evaluar_poblacion,
     validar_restricciones_duras,
     contar_violaciones_poblacion
 )
